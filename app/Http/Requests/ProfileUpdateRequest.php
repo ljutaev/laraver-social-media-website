@@ -28,4 +28,11 @@ class ProfileUpdateRequest extends FormRequest
             ],
         ];
     }
+
+    public function messages()
+    {
+        return [
+            'regex' => 'Username can only contain alphanumeric characters, dash (-) and dot(.).'
+        ];
+    }
 }
